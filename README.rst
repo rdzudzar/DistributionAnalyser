@@ -75,7 +75,6 @@ Code is written in Python 3.8.3, below are the packages which are used in the co
 - ``scipy >= 1.6.1``
 - ``cmasher >= 1.5.10``
 - ``bokeh >= 2.2.3``
-- ``PIL >= 7.2.0``
 
 Structure
 ---------
