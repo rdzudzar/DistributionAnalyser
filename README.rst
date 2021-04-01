@@ -1,15 +1,19 @@
-# Distribution Analyser
+Distribution Analyser
+=====================
+
 |Streamlit| |Release| |MIT licensed|
 
 Distribution Analyser is a Web App that allows you to interactively explore 
 continuous distributions from SciPy and fit distribution(s) to your data.
 
-### Main options:
+Main options:
+=============
 
 - `Explore distributions` - Interactively explore continuous distribution functions from SciPy v1.6.1.
 - `Fit distributions` - Import your data and fit selected continuous distribution(s) to them.
 
-# Explore distributions
+Explore distributions
+---------------------
 
 - Select distribution
 - Use sliders to change distribution parameters and see how distribution changes
@@ -17,7 +21,8 @@ continuous distributions from SciPy and fit distribution(s) to your data.
     - **Slider** can be in steps of 0.10 / 0.01
     - Possible to enter paramter values manually
 
-## Tweak display
+Tweak display
+-------------
 
 - Dark/Light Mode
 - Figure display **on/off** options:
@@ -30,12 +35,14 @@ continuous distributions from SciPy and fit distribution(s) to your data.
     - Regions of 1/2/3 σ
     - Generate table with statistics
 
-## Export
+Export
+------ 
 
 - Generate python code with your selected distribution and it's paramteters
     - Copy code to clipboard or Download **.py** file and run it locally 
 
-# Fit distributions
+Fit distributions
+-----------------
 
 - This part of the app fits selected distribution(s) to the data
     - Import your data in a **.csv** file, or download sample data
@@ -46,7 +53,8 @@ continuous distributions from SciPy and fit distribution(s) to your data.
     - Generates Python code set up with the best fit distribution: makes figure with pdf, cdf and sf
 
 
-## Use Distribution Analyser localy
+Use Distribution Analyser localy
+--------------------------------
 
 Clone repository and run locally with [Streamlit](https://streamlit.io/):
 ```
@@ -68,7 +76,9 @@ Code is written in Python 3.8.3, below are the packages which are used in the co
 > - bokeh >= 2.2.3
 > - PIL >= 7.2.0
 
-## Structure
+Structure
+---------
+
 ```
 |   main.py                  # Distribution Analyser page container
 |   page_introduction.py     # 1st Page in the Main app
@@ -93,11 +103,13 @@ Code is written in Python 3.8.3, below are the packages which are used in the co
 |      __init__.py          
 ```
 
-## How to use
+How to use
+----------
 
 Here is the Distribution Analyser walkthrough.
 
-## Community guidelines
+Community guidelines
+--------------------
 
 **Distribution Analyser** is an open-source and free-to-use, provided under the MIT licence.
 If you like Distribution Analyser, please share it, star repo and feel free to open issues for any bugs/requests.
