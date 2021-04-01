@@ -111,6 +111,6 @@ If you like Distribution Analyser, please share it, star repo and feel free to o
    :alt: Latest Release
 
 .. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-blue.svg
-   :target: https://github.com/rdzudzar/DistributionAnalyser/blob/main/LICENSE
+   :target: https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/LICENSE
    :alt: MIT License
    
