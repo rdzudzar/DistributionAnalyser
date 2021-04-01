@@ -6,7 +6,8 @@ Distribution Analyser
 |Streamlit| |Release| |MIT licensed| 
 
 Distribution Analyser is a Web App that allows you to interactively explore 
-continuous distributions from SciPy and fit distribution(s) to your data.
+continuous distributions from SciPy and fit distribution(s) to your data. 
+Open it in Streamlit and explore online, or clone repo and explore localy.
 
 How to use
 ----------
