@@ -56,7 +56,7 @@ Fit distributions
 Use Distribution Analyser localy
 --------------------------------
 
-Clone repository and run locally with [Streamlit](https://streamlit.io/):
+Clone repository and run locally with Streamlit https://streamlit.io/):
 ::
 
     $ git clone https://github.com/rdzudzar/DistributionAnalyser.git
