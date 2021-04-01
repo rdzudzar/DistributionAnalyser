@@ -120,7 +120,7 @@ If you like Distribution Analyser, please share it, star repo and feel free to o
    :target: https://share.streamlit.io/rdzudzar/DistributionAnalyser/main.py
    :alt: Streamlit App
    
-.. |Release| image:: https://img.shields.io/github/release/manodeep/DistributionAnalyser.svg
+.. |Release| image:: https://img.shields.io/github/release/rdzudzar/DistributionAnalyser.svg
    :target: https://github.com/rdzudzar/DistributionAnalyser/releases/tag/v1.0
    :alt: Latest Release
 
