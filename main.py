@@ -44,7 +44,7 @@ def main():
     pages = {
         "Introduction": page_introduction,
         "Explore distributions": page_explore,
-        "Fit distributiona": page_fit,
+        "Fit distributions": page_fit,
     }
 
     st.sidebar.title("Main options")
