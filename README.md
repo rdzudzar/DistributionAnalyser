@@ -14,26 +14,26 @@ continuous distributions from SciPy and fit distribution(s) to your data.
 - Select distribution
 - Use sliders to change distribution parameters and see how distribution changes
 - Fine tunning: 
-    -**Slider** can be in steps of 0.10 / 0.01
+    - **Slider** can be in steps of 0.10 / 0.01
     - Possible to enter paramter values manually
 
 ## Tweak display
 
 - Dark/Light Mode
 - Figure display **on/off** options:
--- Histogram
--- PDF
--- CDF (with option P(X<=x))
--- SF
--- Boxplot
--- Quantiles (1, 2, 3)
--- Regions of 1/2/3 σ
--- Generate table with statistics
+    - Histogram
+    - PDF
+    - CDF (with option P(X<=x))
+    - SF
+    - Boxplot
+    - Quantiles (1, 2, 3)
+    - Regions of 1/2/3 σ
+    - Generate table with statistics
 
 ## Export
 
 - Generate python code with your selected distribution and it's paramteters
--- Copy code to clipboard or Download **.py** file and run it locally 
+    - Copy code to clipboard or Download **.py** file and run it locally 
 
 # Fit distributions
 
