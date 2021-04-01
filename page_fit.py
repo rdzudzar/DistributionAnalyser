@@ -78,7 +78,7 @@ def page_fit():
     # Get the Sample file from App GitHub repository
     try:
         if download_sample:
-            st.markdown(""" [Download](.....)""")
+            st.markdown(""" [Download](https://github.com/rdzudzar/DistributionAnalyser/blob/main/sample_data/sample_da.csv)""")
             st.markdown("""**after download is complete, 
                         upload data above.*""")
 
