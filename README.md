@@ -78,19 +78,19 @@ Code is written in Python 3.8.3, below are the packages which are used in the co
 |   readme.md                
 |   
 +---images                   
-|   logo_da.png           # App logo
-|   6 other .png          # Images used on the introduction page
+|      logo_da.png           # App logo
+|      6 other .png          # Images used on the introduction page
 |
 +---sample_data              
-|   sample_da.csv         # Sample data for fitting
+|      sample_da.csv         # Sample data for fitting
 |
 +---.streamlit               
-|   config.toml           # Streamlit config file, limits file upload
+|      config.toml           # Streamlit config file, limits file upload
 |       
 +---tests                    
-|   test_app.py           # Tests
-|   funcs_for_testing.py  # Copy of functions that are tested
-|   __init__.py          
+|      test_app.py           # Tests
+|      funcs_for_testing.py  # Copy of functions that are tested
+|      __init__.py          
 ```
 
 ## How to use
