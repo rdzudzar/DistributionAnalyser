@@ -121,7 +121,7 @@ If you like Distribution Analyser, please share it, star repo and feel free to o
    :alt: Streamlit App
    
 .. |Release| image:: https://img.shields.io/github/release/rdzudzar/DistributionAnalyser.svg
-   :target: https://github.com/rdzudzar/DistributionAnalyser/releases/latest
+   :target: https://github.com/rdzudzar/DistributionAnalyser/releases/tag/v1.0
    :alt: Latest Release
 
 .. |MIT licensed| image:: https://img.shields.io/badge/license-MIT-blue.svg
