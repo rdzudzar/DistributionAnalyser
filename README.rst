@@ -82,7 +82,8 @@ Structure
 
 .. code-block:: raw
    
-   project_name
+   Distribution Analyser
+   
    ├── images
    │   ├── logo_da.png           # App logo
    │   └── 6 other .png          # Images used on the introduction page
