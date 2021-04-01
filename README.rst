@@ -6,6 +6,10 @@ Distribution Analyser
 Distribution Analyser is a Web App that allows you to interactively explore 
 continuous distributions from SciPy and fit distribution(s) to your data.
 
+How to use
+----------
+Here is the Distribution Analyser walkthrough.
+
 Main options:
 =============
 
@@ -104,10 +108,7 @@ Structure
    ├── .streamlit
    │   └── config.toml          # Streamlit config file, limits file upload
 
-How to use
-----------
 
-Here is the Distribution Analyser walkthrough.
 
 Community guidelines
 --------------------
