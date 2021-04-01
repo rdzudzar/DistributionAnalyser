@@ -59,14 +59,14 @@ $ streamlit run main.py
 -----------------
 Code is written in Python 3.8.3, below are the packages which are used in the code:
 
-> streamlit >= 0.79.0
-> matplotlib >= 3.2.2
-> pandas >= 1.0.5
-> numpy >= 1.18.5
-> scipy >= 1.6.1
-> cmasher >= 1.5.10
-> bokeh >= 2.2.3
-> PIL >= 7.2.0
+> - streamlit >= 0.79.0
+> - matplotlib >= 3.2.2
+> - pandas >= 1.0.5
+> - numpy >= 1.18.5
+> - scipy >= 1.6.1
+> - cmasher >= 1.5.10
+> - bokeh >= 2.2.3
+> - PIL >= 7.2.0
 
 ## Structure
 ```
