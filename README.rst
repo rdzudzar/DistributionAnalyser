@@ -57,51 +57,53 @@ Use Distribution Analyser localy
 --------------------------------
 
 Clone repository and run locally with [Streamlit](https://streamlit.io/):
-```
-$ git clone https://github.com/rdzudzar/DistributionAnalyser.git
-$ cd DistributionAnalyser
-$ streamlit run main.py
-```
+::
+
+    $ git clone https://github.com/rdzudzar/DistributionAnalyser.git
+    $ cd DistributionAnalyser
+    $ streamlit run main.py
+
 
 **Requirements:**
 -----------------
 Code is written in Python 3.8.3, below are the packages which are used in the code:
 
-> - streamlit >= 0.79.0
-> - matplotlib >= 3.2.2
-> - pandas >= 1.0.5
-> - numpy >= 1.18.5
-> - scipy >= 1.6.1
-> - cmasher >= 1.5.10
-> - bokeh >= 2.2.3
-> - PIL >= 7.2.0
+- ``streamlit >= 0.79.0``,
+- ``matplotlib >= 3.2.2``,
+- ``pandas >= 1.0.5``,
+- ``numpy >= 1.18.5``,
+- ``scipy >= 1.6.1``,
+- ``cmasher >= 1.5.10``,
+- ``bokeh >= 2.2.3``,
+- ``PIL >= 7.2.0``,
 
 Structure
 ---------
 
-```
-|   main.py                  # Distribution Analyser page container
-|   page_introduction.py     # 1st Page in the Main app
-|   page_explore.py          # 2nd Page in the Main app
-|   page_fit.py              # 3rd Page in the Main app
-|   helper_functions.py      # Helper functions contain pre-made properties
-|   readme.md                
-|   
-+---images                   
-|      logo_da.png           # App logo
-|      6 other .png          # Images used on the introduction page
-|
-+---sample_data              
-|      sample_da.csv         # Sample data for fitting
-|
-+---.streamlit               
-|      config.toml           # Streamlit config file, limits file upload
-|       
-+---tests                    
-|      test_app.py           # Tests
-|      funcs_for_testing.py  # Copy of functions that are tested
-|      __init__.py          
-```
+.. code-block:: raw
+   
+   project_name
+   ├── images
+   │   ├── logo_da.png           # App logo
+   │   └── 6 other .png          # Images used on the introduction page
+   ├── sample_data
+   │   └── sample_da.csv         # Sample data for fitting
+   ├── tests
+   │   ├── test_app.py           # Tests
+   │   ├── funcs_for_testing.py  # Copy of functions that are tested
+   │   └── __init__.py
+   ├── .streamlit
+   │   └── config.toml          # Streamlit config file, limits file upload
+   |
+   ├── main.py                  # Distribution Analyser page container
+   ├── page_introduction.py     # 1st Page in the Main app
+   ├── page_explore.py          # 2nd Page in the Main app
+   ├── page_fit.py              # 3rd Page in the Main app
+   ├── helper_functions.py      # Helper functions contain pre-made properties
+   ├── README.rst
+   ├── requirements.txt         # List of used packages
+   └── LICENSE
+
 
 How to use
 ----------
