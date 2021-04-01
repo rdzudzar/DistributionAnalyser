@@ -38,25 +38,25 @@ continuous distributions from SciPy and fit distribution(s) to your data.
 # Fit distributions
 
 - This part of the app fits selected distribution(s) to the data
--- Import your data in a **.csv** file, or download sample data
--- Choose distribution (multiselect box), has options **All_distributions**
+    - Import your data in a **.csv** file, or download sample data
+    - Choose distribution (multiselect box), has options **All_distributions**
 - Show results: 
--- Interactive Figures (limited to 15 best fits)
--- Displays results in a Table (for all distributions), which can be exported as .csv file
--- Generates Python code set up with the best fit distribution: makes figure with pdf, cdf and sf
+    - Interactive Figures (limited to 15 best fits)
+    - Displays results in a Table (for all distributions), which can be exported as .csv file
+    - Generates Python code set up with the best fit distribution: makes figure with pdf, cdf and sf
 
 
 ## Use Distribution Analyser localy
 
-Clone repository and run locally with [streamlit](https://streamlit.io/):
+Clone repository and run locally with [Streamlit](https://streamlit.io/):
 ```
 $ git clone https://github.com/rdzudzar/DistributionAnalyser.git
 $ cd DistributionAnalyser
 $ streamlit run main.py
-
 ```
 
 **Requirements:**
+-----------------
 Code is written in Python 3.8.3, below are the packages which are used in the code:
 
 > streamlit >= 0.79.0
@@ -78,19 +78,19 @@ Code is written in Python 3.8.3, below are the packages which are used in the co
 |   readme.md                
 |   
 +---images                   
-|      logo_da.png           # App logo
-|   	  6 other .png          # Images used on the introduction page
+|   logo_da.png           # App logo
+|   6 other .png          # Images used on the introduction page
 |
 +---sample_data              
-|   	  sample_da.csv         # Sample data for fitting
+|   sample_da.csv         # Sample data for fitting
 |
 +---.streamlit               
-|      config.toml           # Streamlit config file, limits file upload
+|   config.toml           # Streamlit config file, limits file upload
 |       
 +---tests                    
-|      test_app.py           # Tests
-|   	  funcs_for_testing.py  # Copy of functions that are tested
-|      __init__.py          
+|   test_app.py           # Tests
+|   funcs_for_testing.py  # Copy of functions that are tested
+|   __init__.py          
 ```
 
 ## How to use
