@@ -84,6 +84,15 @@ Structure
    
    Distribution Analyser
    
+   ├── main.py                  # Distribution Analyser page container
+   ├── page_introduction.py     # 1st Page in the Main app
+   ├── page_explore.py          # 2nd Page in the Main app
+   ├── page_fit.py              # 3rd Page in the Main app
+   ├── helper_functions.py      # Helper functions contain pre-made properties
+   ├── README.rst
+   ├── requirements.txt         # List of used packages
+   └── LICENSE
+   │
    ├── images
    │   ├── logo_da.png           # App logo
    │   └── 6 other .png          # Images used on the introduction page
@@ -95,16 +104,6 @@ Structure
    │   └── __init__.py
    ├── .streamlit
    │   └── config.toml          # Streamlit config file, limits file upload
-   |
-   ├── main.py                  # Distribution Analyser page container
-   ├── page_introduction.py     # 1st Page in the Main app
-   ├── page_explore.py          # 2nd Page in the Main app
-   ├── page_fit.py              # 3rd Page in the Main app
-   ├── helper_functions.py      # Helper functions contain pre-made properties
-   ├── README.rst
-   ├── requirements.txt         # List of used packages
-   └── LICENSE
-
 
 How to use
 ----------
