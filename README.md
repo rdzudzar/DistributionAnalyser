@@ -14,8 +14,8 @@ continuous distributions from SciPy and fit distribution(s) to your data.
 - Select distribution
 - Use sliders to change distribution parameters and see how distribution changes
 - Fine tunning: 
--- **Slider** can be in steps of 0.10 / 0.01
--- Possible to enter paramter values manually
+    -**Slider** can be in steps of 0.10 / 0.01
+    - Possible to enter paramter values manually
 
 ## Tweak display
 
