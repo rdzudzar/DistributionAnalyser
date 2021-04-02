@@ -32,7 +32,7 @@ def page_introduction():
             left sidebar.
             """)
     st.info("""
-            - Here is a youtube link to the Distribution Analyser walkthrough.
+            - Here is a youtube link to the [Distribution Analyser walkthrough](https://www.youtube.com/watch?v=6S0b7gFY36I&t=3s).
             - App snippets and brief descriptions ⮧
             """)
 
