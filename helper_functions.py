@@ -15,7 +15,7 @@ are explained with multiple parameters, therefore these had to removed.
 
 """
 from scipy import stats 
-from bs4 import BeautifulSoup 
+#from bs4 import BeautifulSoup 
 from six.moves import urllib
 
 
