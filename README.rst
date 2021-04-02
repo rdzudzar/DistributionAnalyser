@@ -11,7 +11,9 @@ Open the app in Streamlit and explore online, or clone repo and explore locally.
 
 How to use
 ----------
-Here is the Distribution Analyser walkthrough.
+Here is a link to YouTube for Distribution Analyser walkthrough.
+http://www.youtube.com/watch?v=6S0b7gFY36I
+
 
 Main options:
 =============
