@@ -246,7 +246,7 @@ def page_explore():
         # Put checkboxes for PDF and Shine in a column
         # If PDF is True (on): Shine can be True/False (on/off)
         # If PDF checkbox is False, remove Shine checkbox
-        select_pdf, select_pdf_shine = st.beta_columns(2)
+        select_pdf, select_pdf_shine = st.columns(2)
         with select_pdf:
             select_pdf = st.checkbox('PDF', value=True)
             if select_pdf == False:
@@ -256,7 +256,7 @@ def page_explore():
                     select_pdf_shine = st.checkbox('Shine', value=True)
         
         # Same functionality as for the PDF above
-        select_cdf, select_cdf_shine = st.beta_columns(2)
+        select_cdf, select_cdf_shine = st.columns(2)
         with select_cdf:
             select_cdf = st.checkbox('CDF', value=False)
             if select_cdf == False:
@@ -279,7 +279,7 @@ def page_explore():
                       step = 0.10)
         
         # Same functionality as for the PDF/CDF above
-        select_sf, select_sf_shine = st.beta_columns(2)
+        select_sf, select_sf_shine = st.columns(2)
         with select_sf:
             select_sf = st.checkbox('SF', value=False)
             if select_sf == False:
@@ -293,7 +293,7 @@ def page_explore():
     
         # Show/hide quantile lines
         st.markdown("**Show quantile(s):**")
-        left, middle, right = st.beta_columns(3)
+        left, middle, right = st.columns(3)
         with left: 
             q1 = st.checkbox('Q1', value=False)#, [0.25,0.5,0.75]
         with middle:
@@ -304,10 +304,10 @@ def page_explore():
         
         # Show/hide shaded sigma region(s)
         # Since widgets don't support latex yet, this is hacky way to add 
-        # sigma next to each checkbox using beta_columns
+        # sigma next to each checkbox using columns
         st.markdown("**Shade region(s) of**")
         left_std, sig1, middle_std, sig2, right_std, sig3 = \
-                                                st.beta_columns([0.012, 0.044, 
+                                                st.columns([0.012, 0.044, 
                                                                 0.02, 0.038,
                                                                 0.02, 0.038])
         with sig1:

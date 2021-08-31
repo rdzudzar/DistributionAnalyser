@@ -57,7 +57,7 @@ def page_introduction():
 
     # Images and brief explanations.
     st.error('Explore distributions')
-    feature1, feature2 = st.beta_columns([0.5,0.4])
+    feature1, feature2 = st.columns([0.5,0.4])
     with feature1:
         st.image(image1, use_column_width=True)
     with feature2:
@@ -70,7 +70,7 @@ def page_introduction():
     
     make_line()
     
-    feature3, feature4 = st.beta_columns([0.6,0.4])
+    feature3, feature4 = st.columns([0.6,0.4])
     with feature3:        
         st.image(image2, use_column_width=True)
     with feature4:
@@ -83,7 +83,7 @@ def page_introduction():
                 """)
     make_line()
     
-    feature5, feature6 = st.beta_columns([0.6,0.4])
+    feature5, feature6 = st.columns([0.6,0.4])
     with feature5:
         st.image(image3, use_column_width=True)
     with feature6:
@@ -97,7 +97,7 @@ def page_introduction():
     make_line()
     
     st.error('Fit distributions')
-    feature7, feature8 = st.beta_columns([0.4,0.6])
+    feature7, feature8 = st.columns([0.4,0.6])
     with feature7:
         st.warning('Import')
         st.info("""
@@ -109,7 +109,7 @@ def page_introduction():
     
     make_line()
     
-    feature9, feature10 = st.beta_columns([0.4,0.6])
+    feature9, feature10 = st.columns([0.4,0.6])
     with feature9:
         st.warning('Fit')
         st.info("""
@@ -122,7 +122,7 @@ def page_introduction():
     
     make_line()
     
-    feature10, feature11 = st.beta_columns([0.4,0.6])
+    feature10, feature11 = st.columns([0.4,0.6])
     with feature10:
         st.warning('Results & Export')
         st.info("""

@@ -20,7 +20,7 @@ np.random.seed(1)
 # Set the default elements on the sidebar
 st.set_page_config(page_title='DistributionAnalyser')
 
-logo, name = st.sidebar.beta_columns(2)
+logo, name = st.sidebar.columns(2)
 with logo:
     image = 'https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/logo_da.png?token=AIAWV2ZRCFKYM42DVFTD3OLAN3CQK'
     st.image(image, use_column_width=True)
