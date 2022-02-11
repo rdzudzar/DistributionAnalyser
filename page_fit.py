@@ -450,7 +450,7 @@ def page_fit():
         return p
 
     
-    @st.cache
+    @st.cache(allow_output_mutation=True)
     def fit_data(df):
         """ 
         Modified from: https://stackoverflow.com/questions/6620471/fitting\
