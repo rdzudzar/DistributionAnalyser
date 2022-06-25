@@ -147,10 +147,17 @@ def page_explore():
                 # For each selected distribution create a link to the 
                 # official SciPy documentation page about that function.
                 st.markdown("**SciPy official documentation:**")
-                st.info(f"""
-                        Read more about: 
-                        [**{name_url_dict[select_distribution][1]}**]\
-                            ({name_url_dict[select_distribution][0]})
+                scipy_link = f'[{name_url_dict[select_distribution][1]}]({name_url_dict[select_distribution][0]})'
+
+                #st.info(f"""
+                #        Read more about: 
+                #        [**{name_url_dict[select_distribution][1]}**]\
+                #            ({name_url_dict[select_distribution][0]})
+                #        """)
+
+                st.info(f""" 
+                        Read more about:
+                        {scipy_link}
                         """)
 
                 return sliders_params
@@ -912,11 +919,17 @@ plt.show()
         
         # Saved file will have distribution name and the timestamp
         code_file = f"{select_distribution}_{time_stamp}.py"
-        st.markdown(f'** Download Python File **: \
-                    <a href="data:file/txt;base64,{b64}" \
-                        download="{code_file}">Click Here</a>', 
-                        unsafe_allow_html=True)
+        #st.markdown(f'** Download Python File **: \
+        #            <a href="data:file/txt;base64,{b64}" \
+        #                download="{code_file}">Click Here</a>', 
+        #                unsafe_allow_html=True)
     
+        st.download_button(
+            label = 'Download .py file',
+            data = f'{py_file_text}',
+            file_name = f'{code_file}',
+            mime = 'application/octet-stream')
+
     # Press the button to get the python code and download hyperlink option
     if export_code:
         get_code()

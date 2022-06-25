@@ -331,10 +331,14 @@ def page_fit():
                 
                 if distribution.name in name_eq_dict.keys():
                         
-                    st.markdown(f"""You can read more about best fit distribution:                        
-                        [**{name_url_dict[distribution.name][1]}**]
-                            ({name_url_dict[distribution.name][0]})
-                        """)
+                    scipy_link = f'[{name_url_dict[distribution.name][1]}]({name_url_dict[distribution.name][0]})'    
+                    
+                    #st.markdown(f"""You can read more about best fit distribution:                        
+                    #    [**{name_url_dict[distribution.name][1]}**]
+                    #        ({name_url_dict[distribution.name][0]})
+                    #    """)
+
+                    st.markdown(f'You can read more about best fit distribution: {scipy_link}')
 
             # Next 15 best fits; 15 is arbitrary taken.
             elif (i>0) and (i < 15):
@@ -610,11 +614,16 @@ def page_fit():
         
         # Saved file will have distribution name and the timestamp
         code_file = f"{best_dist}_{time_stamp}.py"
-        st.markdown(f'** Download Python File **: \
-                    <a href="data:file/txt;base64,{b64}" \
-                        download="{code_file}">Click Here</a>', 
-                        unsafe_allow_html=True)
-    
+        #st.markdown(f'** Download Python File **: \
+        #            <a href="data:file/txt;base64,{b64}" \
+        #                download="{code_file}">Click Here</a>', 
+        #                unsafe_allow_html=True)
+        st.download_button(
+            label = 'Download .py file',
+            data = f'{py_file_text}',
+            file_name = f'{code_file}',
+            mime = 'application/octet-stream')
+
     def csv_downloader(data):
         """
         Strings <-> bytes conversions and creating a link which will
@@ -628,11 +637,18 @@ def page_fit():
         b64 = base64.b64encode(csvfile.encode()).decode()
         
         new_filename = f"fit_results{time_stamp}.csv"
-        href = f'** Download DataFrame as .csv: ** \
-            <a href="data:file/csv;base64,{b64}" \
-            download="{new_filename}">Click Here</a>'
-        st.markdown(href, unsafe_allow_html=True)
-    
+        
+        #href = f'** Download DataFrame as .csv: ** \
+        #    <a href="data:file/csv;base64,{b64}" \
+        #    download="{new_filename}">Click Here</a>'
+        #st.markdown(href, unsafe_allow_html=True)
+        
+        st.download_button(
+            label='Download DataFrame as .csv',
+            data=f'{csvfile}',
+            file_name=f'fit_results_{time_stamp}.csv',
+            key='download-csv')
+
     # Distribution names
     dis = distr_selectbox_names()
 
