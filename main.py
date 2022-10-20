@@ -59,8 +59,7 @@ def main():
     st.sidebar.header("About")
     st.sidebar.warning(
             """
-            Distribution Analyser app is created and maintained by astrophysicist
-            **Dr Robert Dzudzar**. 
+            Distribution Analyser app is created and maintained by **Dr Robert Dzudzar**. 
             If you like this app please star its
             [**GitHub**](https://github.com/rdzudzar/DistributionAnalyser)
             repo, share it and feel free to open an issue if you find a bug 
