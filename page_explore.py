@@ -14,6 +14,9 @@ import matplotlib.pyplot as plt
 import time
 import base64
 
+from astronify.series import SoniSeries
+from astropy.table import Table
+
 # Helper function imports
 # These are pre-computed so that they don't slow down the App
 from helper_functions import (distr_selectbox_names,
@@ -353,8 +356,6 @@ def page_explore():
 
     
     with make_expanders("Hear PDF of Selected Distribution"):
-        from astronify.series import SoniSeries
-        from astropy.table import Table
 
         data_table = Table({"time": x1, 
                         "flux": rv1.pdf(x1)})
