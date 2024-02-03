@@ -14,8 +14,8 @@ import matplotlib.pyplot as plt
 import time
 import base64
 
-from astronify.series import SoniSeries
-from astropy.table import Table
+#from astronify.series import SoniSeries
+#from astropy.table import Table
 
 # Helper function imports
 # These are pre-computed so that they don't slow down the App
@@ -356,21 +356,21 @@ def page_explore():
 
     
     with make_expanders("Hear PDF of Selected Distribution"):
+        st.write("Currently available only on local versions.")
+        #data_table = Table({"time": x1, 
+        #                "flux": rv1.pdf(x1)})
 
-        data_table = Table({"time": x1, 
-                        "flux": rv1.pdf(x1)})
-
-        sound_speed = st.slider("Select speed of the played sound:", min_value=0.01, max_value=0.1, value=0.07, step=0.01)
-        center_pitch = st.slider("Select the center pitch:", min_value=100, max_value=800, value=440, step=50)
+        #sound_speed = st.slider("Select speed of the played sound:", min_value=0.01, max_value=0.1, value=0.07, step=0.01)
+        #center_pitch = st.slider("Select the center pitch:", min_value=100, max_value=800, value=440, step=50)
 
 
-        soni_obj = SoniSeries(data_table)
-        soni_obj.pitch_mapper.pitch_map_args["center_pitch"] = center_pitch
-        soni_obj.note_spacing = sound_speed
-        soni_obj.sonify()
-        save = soni_obj.write('Example.mp3')
-        st.audio('Example.mp3')
-        #st.write("Hi")
+        #soni_obj = SoniSeries(data_table)
+        #soni_obj.pitch_mapper.pitch_map_args["center_pitch"] = center_pitch
+        #soni_obj.note_spacing = sound_speed
+        #soni_obj.sonify()
+        #save = soni_obj.write('Example.mp3')
+        #st.audio('Example.mp3')
+
 
     # A little of breathing room before I display 'About'
     st.sidebar.write("")    
