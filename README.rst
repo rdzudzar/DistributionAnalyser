@@ -122,7 +122,7 @@ Community guidelines
 If you like Distribution Analyser, please share it, star repo and feel free to open issues for any bugs/requests.
 
 .. |Streamlit| image:: https://static.streamlit.io/badges/streamlit_badge_black_white.svg
-   :target: https://share.streamlit.io/rdzudzar/distributionanalyser/main/main.py
+   :target: https://rdzudzar-distributionanalyser-main-45cc69.streamlit.app/
    :alt: Streamlit App
    
 .. |Release| image:: https://img.shields.io/github/release/rdzudzar/DistributionAnalyser.svg
