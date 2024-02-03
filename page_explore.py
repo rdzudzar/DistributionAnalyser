@@ -355,8 +355,8 @@ def page_explore():
             
 
     
-    with make_expanders("Hear PDF of Selected Distribution"):
-        st.write("Currently available only on local versions.")
+    #with make_expanders("Hear PDF of Selected Distribution"):
+    #    st.write("Currently available only on local versions.")
         #data_table = Table({"time": x1, 
         #                "flux": rv1.pdf(x1)})
 
