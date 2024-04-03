@@ -59,11 +59,11 @@ def page_fit():
     #maxUploadSize=2
     
     # Using cache as we perform only once 'loading' of the data
-    @st.cache_data
+    #@st.cache_data
     def load_csv():
         """ Get the loaded .csv into Pandas dataframe. """
     
-        df_load = pd.read_csv(input, sep=None , engine='python',
+        df_load = pd.read_csv(input, sep=',' , engine='python',
                              encoding='utf-8')
         return df_load
    
