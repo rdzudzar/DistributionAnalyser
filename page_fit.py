@@ -282,7 +282,7 @@ def page_fit():
         """
                  
         # Pasing dictionary with best fit results
-        fit_dict_res = fit_data(df)
+        fit_dict_res = results#fit_data(df)
         hist, edges = np.histogram(df, density=True, 
                                    bins=round(math.sqrt(len(df))))
         
@@ -384,7 +384,7 @@ def page_fit():
           
     
         # Pasing dictionary with best fit results
-        fit_dict_res = fit_data(df)
+        fit_dict_res = results#fit_data(df)
         
         hist, edges = np.histogram(df, density=True, 
                                    bins=round(math.sqrt(len(df))))
@@ -528,7 +528,7 @@ def page_fit():
         """
         
         # Pasing dictionary with best fit results
-        fit_dict_res = fit_data(df)
+        fit_dict_res = results#fit_data(df)
         
         df_dist = []
         df_params = []
@@ -567,7 +567,7 @@ def page_fit():
         # Need to start loop as I want to separate first item
         i = -1
         # Pasing dictionary with best fit results
-        fit_dict_res = fit_data(df)
+        fit_dict_res = results#fit_data(df)
         for distribution, result in fit_dict_res.items():
             i += 1
             if i == 0:
