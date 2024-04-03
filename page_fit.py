@@ -714,23 +714,23 @@ def page_fit():
                                 
             # After fitting, checkbox apears and when clicked: user get 
             # options which results they want to see, as they are several
-            if fit_confirmation:
-                st.write('Results are ready, select what you wish to see:')   
+            #if fit_confirmation:
+                st.write('Results are ready:')   
 
-                if st.checkbox('Interactive Figures'):
-                    st.info('Interactive Figure: click on the legend to \
-                        enhance selected fit.')
-                    p1 =  bokeh_pdf_plot_results(df, results, n) #p2
-                    st.bokeh_chart(p1)
-                    st.info('Interactive Figure: Comparing CDFs')
-                    p2 =  bokeh_cdf_plot_results(df, results, n)
-                    st.bokeh_chart(p2)
+                #if st.checkbox('Interactive Figures'):
+                st.info('Interactive Figure: click on the legend to \
+                    enhance selected fit.')
+                p1 =  bokeh_pdf_plot_results(df, results, n) #p2
+                st.bokeh_chart(p1)
+                st.info('Interactive Figure: Comparing CDFs')
+                p2 =  bokeh_cdf_plot_results(df, results, n)
+                st.bokeh_chart(p2)
                 
-                if st.checkbox('Table'):
-                    st.info('DataFrame: all fitted distributions\
-                        and their SSE (sum of squared estimate of errors).')
-                    st.dataframe(results_to_dataframe(df, results))
-                    csv_downloader(results_to_dataframe(df, results))
+                #if st.checkbox('Table'):
+                st.info('DataFrame: all fitted distributions\
+                    and their SSE (sum of squared estimate of errors).')
+                st.dataframe(results_to_dataframe(df, results))
+                csv_downloader(results_to_dataframe(df, results))
                     
 
                 shapes, best_dist, best_scale, best_loc, args, fit_params_all \
@@ -819,14 +819,14 @@ plt.show()
     """
                 # Press the button to get the python code and 
                 #   download hyperlink option
-                if st.checkbox('Generate Python Code'):
+                #if st.checkbox('Generate Python Code'):
 
-                    st.info("""
-                         **Python script** with best fit
-                         distribution & parameters.
-                        """)
-                    get_code()
-                    py_file_downloader(f"{generate_fit_code}")
+                st.info("""
+                        **Python script** with best fit
+                        distribution & parameters.
+                    """)
+                get_code()
+                py_file_downloader(f"{generate_fit_code}")
 
                 
 
