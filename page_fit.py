@@ -59,7 +59,7 @@ def page_fit():
     #maxUploadSize=2
     
     # Using cache as we perform only once 'loading' of the data
-    @st.cache
+    @st.cache_data
     def load_csv():
         """ Get the loaded .csv into Pandas dataframe. """
     
@@ -454,7 +454,7 @@ def page_fit():
         return p
 
     
-    @st.cache(allow_output_mutation=True)
+    #@st.cache_data#cache(allow_output_mutation=True)
     def fit_data(df):
         """ 
         Modified from: https://stackoverflow.com/questions/6620471/fitting\
@@ -475,31 +475,32 @@ def page_fit():
 
             results = {}
             for distribution in chosen_distr:
+                try:
+                    # Go through distributions
+                    dist = getattr(scipy.stats, distribution)
+                    # Get distribution fitted parameters
+                    params = dist.fit(df)
+                    
+                    ## Separate parameters
+                    arg = params[:-2]
+                    loc = params[-2]
+                    scale = params[-1]
                 
-                # Go through distributions
-                dist = getattr(scipy.stats, distribution)
-                # Get distribution fitted parameters
-                params = dist.fit(df)
-                
-                ## Separate parameters
-                arg = params[:-2]
-                loc = params[-2]
-                scale = params[-1]
+                    ## Obtain PDFs
+                    pdf_values = [dist.pdf(c, loc=loc, scale=scale, *arg) for c in
+                                central_values]
             
-                ## Obtain PDFs
-                pdf_values = [dist.pdf(c, loc=loc, scale=scale, *arg) for c in
-                              central_values]
-        
-                # Calculate the RSS: residual sum of squares 
-                # Also known as SSE: sum of squared estimate of errors
-                # The sum of the squared differences between each observation\
-                # and its group's mean; here: diff between distr. & data hist
-                sse = np.sum(np.power(hist - pdf_values, 2.0))
-                
-                
-                # Parse fit results 
-                results[dist] = [sse, arg, loc, scale]
-
+                    # Calculate the RSS: residual sum of squares 
+                    # Also known as SSE: sum of squared estimate of errors
+                    # The sum of the squared differences between each observation\
+                    # and its group's mean; here: diff between distr. & data hist
+                    sse = np.sum(np.power(hist - pdf_values, 2.0))
+                    
+                    
+                    # Parse fit results 
+                    results[dist] = [sse, arg, loc, scale]
+                except RuntimeError:
+                    st.write(f'Skipping, runtime error {distribution}')
             # containes e.g. [0.5, (13,), 8, 1]
             # equivalent to  [sse, (arg,), loc, scale] as argument number varies
             results = {k: results[k] for k in sorted(results, key=results.get)}
