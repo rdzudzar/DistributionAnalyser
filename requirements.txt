@@ -1,7 +1,7 @@
 streamlit >= 0.79.0
 matplotlib >= 3.2.2
 pandas >= 1.0.5
-numpy >= 1.18.5
+numpy == 1.23.5
 scipy >= 1.6.1
 cmasher >= 1.5.10
 bokeh == 2.4.3
