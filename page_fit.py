@@ -25,7 +25,8 @@ from helper_functions import distr_selectbox_names,creating_dictionaries
 import time
 import base64
 import collections
-
+import collections.abc
+collections.Iterable = collections.abc.Iterable
 
 def page_fit():
     """

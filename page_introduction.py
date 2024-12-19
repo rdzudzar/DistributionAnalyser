@@ -37,12 +37,12 @@ def page_introduction():
             """)
 
 
-    image1 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Dist1.png?token=AIAWV2ZQOGWADUFWZM3ZWBLAN3CD6"
-    image2 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Dist2.png?token=AIAWV27IFN4ZLN3EAONHMVLAN3BNS"
-    image3 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Dist3.png?token=AIAWV25DCGRPJRFLDPQIWN3AN3BPA"
-    image4 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Fit1.png?token=AIAWV2ZVPX4HJL77ZQRTIBDAN3BQK"
-    image5 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Fit2.png?token=AIAWV27QFQIAEOQSRDQVC3DAN3BRQ"
-    image6 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/Fit3.png?token=AIAWV265V2EQ24SLCTLEHOTAN3BSQ"
+    image1 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Dist1.png"
+    image2 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Dist2.png"
+    image3 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Dist3.png"
+    image4 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Fit1.png"
+    image5 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Fit2.png"
+    image6 = "https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/Fit3.png"
 
 
     
@@ -59,7 +59,7 @@ def page_introduction():
     st.error('Explore distributions')
     feature1, feature2 = st.columns([0.5,0.4])
     with feature1:
-        st.image(image1, use_column_width=True)
+        st.image(image1)
     with feature2:
         st.warning('Select Distribution')
         st.info("""
@@ -72,7 +72,7 @@ def page_introduction():
     
     feature3, feature4 = st.columns([0.6,0.4])
     with feature3:        
-        st.image(image2, use_column_width=True)
+        st.image(image2)
     with feature4:
         st.warning('Tweak Display')
         st.info("""
@@ -85,7 +85,7 @@ def page_introduction():
     
     feature5, feature6 = st.columns([0.6,0.4])
     with feature5:
-        st.image(image3, use_column_width=True)
+        st.image(image3)
     with feature6:
         st.warning('Export')
         st.info("""
@@ -105,7 +105,7 @@ def page_introduction():
                 - Plot your data with or without basic statistical information.
                 """)
     with feature8:
-        st.image(image4, use_column_width=True)
+        st.image(image4)
     
     make_line()
     
@@ -118,7 +118,7 @@ def page_introduction():
                 - Fit distribution(s) to your data
                 """)
     with feature10:
-        st.image(image5, use_column_width=True)        
+        st.image(image5)        
     
     make_line()
     
@@ -131,7 +131,7 @@ def page_introduction():
                 - Generate **Python code** with best fit distribution 
                 """)
     with feature11:
-        st.image(image6, use_column_width=True)      
+        st.image(image6)      
     
     make_line()
     

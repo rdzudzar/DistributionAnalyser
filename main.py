@@ -22,8 +22,8 @@ st.set_page_config(page_title='DistributionAnalyser')
 
 logo, name = st.sidebar.columns(2)
 with logo:
-    image = 'https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/main/images/logo_da.png?token=AIAWV2ZRCFKYM42DVFTD3OLAN3CQK'
-    st.image(image, use_column_width=True)
+    image = 'https://raw.githubusercontent.com/rdzudzar/DistributionAnalyser/refs/heads/main/images/logo_da.png'
+    st.image(image)
 with name:
     st.markdown("<h1 style='text-align: left; color: grey;'> \
                 Distribution Analyser </h1>", unsafe_allow_html=True)
