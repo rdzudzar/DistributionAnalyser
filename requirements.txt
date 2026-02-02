@@ -4,4 +4,4 @@ pandas >= 1.0.5
 numpy == 1.23.5
 scipy >= 1.6.1
 cmasher >= 1.5.10
-bokeh ~> 3.8.2
+bokeh >= 3.8.2
